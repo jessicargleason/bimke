@@ -2,6 +2,7 @@ body {
     background-color: #111;
     font-family: 'Muli', sans-serif;
     color: #fff;
+    line-height: 1.5;
 }
 
 a {
@@ -17,6 +18,22 @@ a:hover {
 p {
     /* Keep paragraphs short enough to be readable */
     max-width: 45em;
+}
+
+li {
+    margin-top: 1em;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: #000;
+    text-align: right;
+    padding: 15px 0;
 }
 
 .button {
@@ -87,6 +104,10 @@ p {
     position: relative;
 }
 
+.facebook-container {
+    width: 280px;
+}
+
 /* Styles for screens over 580px wide*/
 
 @media (min-width: 580px) {
@@ -120,6 +141,13 @@ p {
 
     .flex {
         display: flex;
+    }
+    .flex > * + * {
+        padding-left: 15px;
+    }
+
+    .facebook-container {
+        width: 500px;
     }
 
 }
