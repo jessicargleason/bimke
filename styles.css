@@ -106,6 +106,7 @@ footer {
 
 .facebook-container {
     width: 280px;
+    padding: 25px 0;
 }
 
 /* Styles for screens over 580px wide*/
@@ -142,12 +143,10 @@ footer {
     .flex {
         display: flex;
     }
-    .flex > * + * {
-        padding-left: 15px;
-    }
 
     .facebook-container {
         width: 500px;
+        padding: 25px;
     }
 
 }
