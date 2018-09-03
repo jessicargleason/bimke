@@ -28,6 +28,12 @@ p {
     border-radius: 5px;
     border: 1px solid #0038A8;
     text-align: center;
+    box-shadow: 1px 1px #000;
+}
+
+.button--alt {
+    background-color: #D60270;
+    border: 1px solid #D60270;
 }
 
 /* Make sure buttons next to each other have space */
@@ -53,6 +59,11 @@ p {
     padding-top: 25px;
     padding-bottom: 25px;
     position: relative;
+    text-shadow: 1px 1px #000;
+}
+
+.cover--map {
+    background-image: url(map.jpg);
 }
 
 /* But a tint on the cover image */
@@ -95,12 +106,20 @@ p {
         text-align: center;
     }
 
-    
+    .cover--left {
+        text-align: left;
+    }
 
     .cover p {
         /* Since text is centered, paragraph should be centered too */
         margin: auto;
         font-size: 1.1em;
+    }
+
+    /* At larger sizes, items inside this container automatically size into columns */
+
+    .flex {
+        display: flex;
     }
 
 }
