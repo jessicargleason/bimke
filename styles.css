@@ -83,6 +83,10 @@ footer {
     background-image: url(map.jpg);
 }
 
+.cover--resources {
+    background-image: url(unicorn.jpg);
+}
+
 /* But a tint on the cover image */
 
 .cover:before {
@@ -111,7 +115,7 @@ footer {
 
 /* Styles for screens over 580px wide*/
 
-@media (min-width: 580px) {
+@media (min-width: 768px) {
     .button {
         display: inline-block;
     }
