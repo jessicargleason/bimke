@@ -48,9 +48,14 @@ footer {
     box-shadow: 1px 1px #000;
 }
 
-.button--alt {
+.button--insta {
     background-color: #D60270;
     border: 1px solid #D60270;
+}
+
+.button--alt {
+    background-color: #9939ed;
+    border: 1px solid #9939ed;
 }
 
 /* Make sure buttons next to each other have space */
@@ -79,6 +84,10 @@ footer {
     text-shadow: 1px 1px #000;
 }
 
+.cover--calendar {
+	background-image: url(summerfest.jpg);
+}
+
 .cover--map {
     background-image: url(map.jpg);
 }
@@ -87,7 +96,7 @@ footer {
     background-image: url(unicorn.jpg);
 }
 
-/* But a tint on the cover image */
+/* Put a tint on the cover image */
 
 .cover:before {
     content: " ";
@@ -112,6 +121,14 @@ footer {
     width: 280px;
     padding: 25px 0;
 }
+
+.calendar-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Set the aspect ratio for the calendar */
+    overflow: hidden;
+}
+
 
 /* Responsive styling for video embeds */
 
@@ -168,5 +185,5 @@ footer {
         width: 500px;
         padding: 25px;
     }
-
+	
 }
