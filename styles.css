@@ -64,6 +64,12 @@ footer {
     color: #000;
 }
 
+.button--pan-blue {
+    background-color: #21B1FF;
+    border: 1px solid #21B1FF;
+    color: #000;
+}
+
 /* Make sure buttons next to each other have space */
 .button + .button {
     margin-top: 1em;
