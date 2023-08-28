@@ -96,6 +96,10 @@ footer {
     background-image: url(unicorn.jpg);
 }
 
+.flex p {
+    margin: 10px;
+}
+
 /* Put a tint on the cover image */
 
 .cover:before {
