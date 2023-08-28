@@ -141,6 +141,37 @@ footer {
     flex-basis: 50%;
 }
 
+.book-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.book-container div {
+    padding: 15px;
+}
+
+.book-container img {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .book-container {
+        display: flex;
+    }
+
+    .book-container div {
+        flex-basis: 40%;
+    }
+  
+  .book-container div + div {
+    flex-basis: 60%;
+  }
+
+}
+
 
 /* Responsive styling for video embeds */
 
