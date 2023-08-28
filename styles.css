@@ -153,21 +153,6 @@ footer {
     flex-basis: 50%;
 }
 
-.book-container {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 800px;
-    margin: auto;
-}
-
-.book-container div {
-    padding: 15px;
-}
-
-.book-container img {
-    max-width: 100%;
-}
-
 nav {
     display: flex;
     align-items: baseline;
@@ -227,6 +212,21 @@ nav ul li {
     font-size: 1.2rem;
 }
 
+.book-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.book-container div {
+    padding: 15px;
+}
+
+.book-container img {
+    max-width: 100%;
+}
+
 @media (min-width: 768px) {
 
     .book-container {
@@ -243,6 +243,19 @@ nav ul li {
 
 }
 
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+    margin: auto;
+    gap: 25px;
+}
+
+.book-grid img {
+    max-width: 100%;
+}
 
 /* Responsive styling for video embeds */
 
