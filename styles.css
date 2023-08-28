@@ -58,6 +58,12 @@ footer {
     border: 1px solid #9939ed;
 }
 
+.button--yellow {
+    background-color: #ffd800;
+    border: 1px solid #ffd800;
+    color: #000;
+}
+
 /* Make sure buttons next to each other have space */
 .button + .button {
     margin-top: 1em;
@@ -222,6 +228,12 @@ footer {
 
     .flex {
         display: flex;
+    }
+
+    .flex-nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
     }
 
     .facebook-container {
