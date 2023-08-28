@@ -129,6 +129,10 @@ footer {
     overflow: hidden;
 }
 
+.event-mini-calendar {
+    flex-basis: 50%;
+}
+
 
 /* Responsive styling for video embeds */
 
@@ -171,7 +175,7 @@ footer {
 
     .cover p {
         /* Since text is centered, paragraph should be centered too */
-        margin: auto;
+        margin: 10px auto;
         font-size: 1.1em;
     }
 
