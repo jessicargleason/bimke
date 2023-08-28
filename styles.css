@@ -88,6 +88,10 @@ footer {
 	background-image: url(summerfest.jpg);
 }
 
+.cover--bookclub {
+	background-image: url(bookclub.png);
+}
+
 .cover--map {
     background-image: url(map.jpg);
 }
