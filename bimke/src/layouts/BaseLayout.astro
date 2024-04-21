@@ -9,6 +9,7 @@ const { page, pageTitle, description } = Astro.props;
 	<head>
 		<title>{pageTitle ? `${pageTitle} | ` : ''} Bi+ Pride Milwaukee</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8" />
 		{description && <meta name="description" content={description} />}
 		<link rel="stylesheet" href="/styles/normalize.css" />
 		<link rel="stylesheet" href="/styles/styles.css" />
