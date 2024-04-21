@@ -46,6 +46,7 @@ footer {
     border: 1px solid #0038A8;
     text-align: center;
     box-shadow: 1px 1px #000;
+    text-shadow: none;
 }
 
 .button--insta {
@@ -87,7 +88,6 @@ footer {
 }
 
 .cover {
-    background-image: url(cover.jpg);
     background-size: cover;
     background-position: center center;
     padding-top: 25px;
@@ -118,7 +118,7 @@ footer {
 
 /* Put a tint on the cover image */
 
-.cover:before {
+.cover--tint:before {
     content: " ";
     width: 100%;
     height: 100%;
@@ -290,6 +290,7 @@ nav ul li {
         padding-top: 100px;
         padding-bottom: 100px;
         text-align: center;
+        background-color: #000;
     }
 
     .cover--left {

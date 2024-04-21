@@ -1,0 +1,22 @@
+---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+const { page, pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>{pageTitle ? `${pageTitle} | ` : ''} Bi+ Pride Milwaukee</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/styles/normalize.css" />
+		<link rel="stylesheet" href="/styles/styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	</head>
+	<body>
+		<Navigation page={page} />
+            <slot />
+		<Footer />
+	</body>
+</html>
+

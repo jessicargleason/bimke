@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout page="home">
+		<Section backgroundImage="cover.jpg">
+			<p>Working to build a strong, vibrant Bisexual/Pansexual/No-Label/Fluid/Queer/Non-Monosexual community in Milwaukee and Southeastern Wisconsin.</p>
+			<a href="https://www.facebook.com/BiPrideMilwaukee/" class="button">Visit our Public Facebook Page</a>
+			<a href="https://www.facebook.com/groups/bipridemke/" class="button button--alt">Join our Private Facebook Group</a>
+			<a href="https://www.instagram.com/bipridemke/" class="button button--insta">Follow us on Instagram</a>
+		</Section>
+		<Section>
+			<div class="video-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/M6CU3qEqs9Y?rel=0&amp;showinfo=0&autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</Section>
+		<Section backgroundImage="map.jpg" textDirection="left">
+			<div class="flex" id="events">
+				<div>
+					<h2>Events</h2>
+					<p><strong>Mission:</strong> To create a sustainable social community for non-monosexual individuals (and their partners and allies) in the Milwaukee metropolitan area.</p>
+					<p>Join us for crafts, happy hours, discussion groups, and more.</p>
+					<p>
+						<a href="calendar.html" class="button">View full calendar</a>
+					</p>
+					<div class="facebook-container">
+						<div class="fb-page" data-href="https://www.facebook.com/BiPrideMilwaukee/" data-tabs="events" data-height="600px" data-width="500px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/BiPrideMilwaukee/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BiPrideMilwaukee/">Bi+ Pride Milwaukee</a></blockquote></div>
+					</div>
+				</div>
+				<div class="event-mini-calendar">
+					<iframe src="https://embed.styledcalendar.com/#dLwM9XnZvoI8an95cZC8" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; max-width: 600px; border: none;" data-cy="calendar-embed-iframe"></iframe>
+					<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+				</div>
+			</div>	
+	</Section>
+	<Section backgroundImage="unicorn.jpg" textDirection="left">
+		<h2>Resources</h2>
+		<p>Information and events related to bisexuals and other non-monosexual people.</p>
+		<ul>
+			<li><a href="https://bisexual.org/" target="_blank" rel="noopener">Bisexual.org</a>: Information about bisexuality and famous bi people</li>
+			<li><a href="https://www.hrc.org/" target="_blank" rel="noopener">Human Rights Campaign</a>: Civil rights organization</li>
+			<li><a href="http://www.mkelgbt.org/" target="_blank" rel="noopener">Milwaukee LGBT Community Center</a>: Programs and services for LGBT people in Milwaukee</li>
+			<li><a href="http://www.milwaukeepride.org/" target="_blank" rel="noopener">Milwaukee Pride</a>: Organization that runs events such as <a href="http://pridefest.com/">Pridefest</a></li>
+			<li><a href="http://www.bivisibilityday.com/" target="_blank" rel="noopener">Bi Visibility Day</a>: An annual day highlighting the bisexual community</li>
+			<li><a href="http://www.binetusa.org/" target="_blank" rel="noopener">BiNet USA</a>: A national bisexual network</li>
+		</ul>
+	</Section>
+</BaseLayout>
