@@ -1,7 +1,7 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
-const { page, pageTitle } = Astro.props;
+const { page, pageTitle, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -9,6 +9,7 @@ const { page, pageTitle } = Astro.props;
 	<head>
 		<title>{pageTitle ? `${pageTitle} | ` : ''} Bi+ Pride Milwaukee</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{description && <meta name="description" content={description} />}
 		<link rel="stylesheet" href="/styles/normalize.css" />
 		<link rel="stylesheet" href="/styles/styles.css" />
 		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
