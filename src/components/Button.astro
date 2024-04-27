@@ -1,0 +1,21 @@
+---
+const {color, link} = Astro.props;
+let colorClass;
+switch(Astro.props.color) {
+    case "purple":
+        colorClass="button--alt"
+        break;
+    case "pink":
+        colorClass="button--insta"
+        break;
+    case "yellow":
+        colorClass="button--yellow"
+        break;
+    case "pan-blue":
+        colorClass="button--pan-blue"
+        break;
+    default:
+        colorClass = ""
+}
+---
+<a href={link} class={`${colorClass} button`} target="_blank"><slot /></a>

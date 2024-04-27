@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import ButtonNavigation from '../components/ButtonNavigation.astro';
+import Button from '../components/Button.astro';
+import BookLayout from '../layouts/BookLayout.astro';
+---
+<BaseLayout pageTitle="Bi+ Book Club" page="bookclub" description="Milwaukee book club reading books related to bisexuality">
+	<Section backgroundImage="bookclub.png">
+		<p>Bi+ Pride Milwaukee's Book Club meets bi-monthly (every other month)
+		<br>@ the Milwaukee LGBT Center at 6:30 PM
+		<br>315 W Court Street, Milwaukee, WI 53212</p>
+	</Section>
+	<Section textDirection="left">
+		<ButtonNavigation>
+			<h2>Bi+ Book Club</h2>
+			<p>
+				<Button link="https://www.roomofonesown.com/" color="bi-blue">A Room of One's Own</Button>
+			</p>
+			<p>
+				<Button link="https://www.boswellbooks.com/" color="purple">Boswell Book Company</Button>
+			</p>
+			<p>
+				<Button link="https://bookshop.org/lists/bi-pride-milwaukee-book-club-picks/" color="pink">Bookshop.org</Button>
+			</p>
+			<p>
+				<Button link="https://www.amazon.com/abc/detail/amzn1.club.bookclub.e4c5192b-58f3-740b-8d08-be66b03e2933?ref_=abc_aa_bdp_r_ds_imw_ibc" color="yellow">Amazon Book Club</a>
+			</p>
+			<p>
+				<Button link="https://www.mpl.org" color="pan-blue">Milwaukee Public Library</Button>
+			</p>
+		</ButtonNavigation>
+		<p>We love to support our local queer-owned businesses! So while you can absolutely check out our Amazon book club, we encourge you to shop local and support queer folks! The buttons at the top of the page lead to ways you can do that!</p>
+		<p>Mention the Bi+ Book Club at Boswell Books for a 10% discount (and find our next read on their book club shelf!)<br>
+		Purchasing through our affiliate link at bookshop.org will donate 10% of the sale to Bi+ Pride MKE!</p>	
+	</Section>
+	<BookLayout />
+</BaseLayout>
+

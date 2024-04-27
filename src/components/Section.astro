@@ -1,0 +1,11 @@
+---
+const { textDirection, backgroundImage } = Astro.props;
+---
+<div 
+    class=`cover ${textDirection === 'left' ? 'cover--left' : 'cover--center'} ${backgroundImage ? 'cover--tint' : ''}` 
+    style={backgroundImage ? `background-image: url('/background-images/${backgroundImage}')` : ''}
+>
+    <div class="container">
+       <slot />
+    </div>
+</div>

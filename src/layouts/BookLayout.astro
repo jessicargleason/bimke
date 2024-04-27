@@ -1,0 +1,69 @@
+---
+import Section from '../components/Section.astro';
+import { getCollection } from 'astro:content';
+const currentBooks = await getCollection('books', ({ data }) => {
+  return ((data.archived !== true) && data.year && data.monthNumber);
+});
+currentBooks.sort(
+  (a, b) => {
+    if (a.data.year !== b.data.year) return a.data.year - b.data.year;
+    return a.data.monthNumber - b.data.monthNumber
+  }
+);
+const archivedBooks = await getCollection('books', ({ data }) => {
+  return data.archived === true;
+});
+---
+<hr>
+{currentBooks.map(async book => 
+    {
+    const {
+        bookTitle,
+        bookType,
+        coverImage,
+        eventLink,
+        archiveLink,
+        eventDateHeading,
+    } = book.data;
+    const { Content } = await book.render();
+    return (
+        <div class="book-container">
+            <div>
+                <a href={archiveLink} target="_blank">
+                    <img src={`/bookclub-assets/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
+                </a>
+            </div>
+            <div>
+                <h3>{eventDateHeading} <br>
+                {bookTitle}<br>
+                {bookType && `(${bookType})`}</h3>
+                <Content />
+                {eventLink && <p><a href={eventLink} target="_blank">Facebook event</a></p>}
+            </div>
+        </div>
+  );
+},
+)}
+<hr />
+<Section>
+    <h2>Previous Book Club Selections</h2>
+</Section>
+<div class="book-grid">
+    {archivedBooks.map(book => 
+        {
+            const {
+                bookTitle,
+                bookType,
+                coverImage,
+                archiveLink,
+            } = book.data;
+            return (
+                <div>
+                    <a href={archiveLink} target="_blank">
+                        <img src={`/bookclub-assets/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
+                    </a>
+                </div>
+            );
+        },
+    )}
+</div>

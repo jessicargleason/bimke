@@ -1,0 +1,36 @@
+---
+import Section from '../components/Section.astro';
+import { getCollection } from 'astro:content';
+const news = await getCollection('news');
+news.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<hr>
+{news.map(async article => 
+    {
+    const {
+        title,
+        link,
+        image,
+        sourceName,
+        date
+    } = article.data;
+    const { Content } = await article.render();
+    return (
+        <div class="book-container">
+            <div>
+            {image?.url &&
+                <a href={link} target="_blank">
+                    <img src={`/news/${image.url}`} alt={image?.alt ? image.alt : title} />
+                </a>
+            }
+            </div>
+            <div>
+                <h2>{title}</h2>
+                <Content />
+                {link && <p><a href={link} target="_blank">Read at {sourceName}</a></p>}
+            </div>
+        </div>
+  );
+},
+)}
+</div>

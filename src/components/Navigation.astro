@@ -1,0 +1,18 @@
+---
+const { page } = Astro.props;
+---
+<div class="container">
+    <nav>
+        <div class="header">
+            <h1>Bi+ Pride Milwaukee</h1>
+            <button id="nav-button" aria-controls="nav">Menu</button>
+        </div>
+        <ul aria-expanded="true" id="nav">
+            <li class={page === "home" && "active"}><a href="/">Home</a></li>
+            <li class={page === "calendar" && "active"}><a href="/calendar">Calendar</a></li>
+            <li><a href="/#events">Events</a></li>
+            <li class={page === "bookclub" && "active"}><a href="/bookclub">Book Club</a></li>
+            <li class={page === "news" && "active"}><a href="/in-the-news">In the News</a></li>
+        </ul>
+    </nav>
+</div>

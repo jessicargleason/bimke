@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+---
+<BaseLayout pageTitle="Upcoming Events Calendar" page="calendar" description="Calendar of upcoming events like book club meetings, craft afternoons, happy hours, and other social outings for Milwaukee bisexuals">
+    <Section backgroundImage="summerfest.jpg">
+        <p>Working to build a strong, vibrant Bisexual/Pansexual/No-Label/Fluid/Queer/Non-Monosexual community in Milwaukee and Southeastern Wisconsin.</p>
+    </Section>
+    <Section>
+        <h2>Event Calendar</h2>
+        <div class="calendar-container">
+            <iframe src="https://embed.styledcalendar.com/#dLwM9XnZvoI8an95cZC8" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+            <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+        </div>
+    </Section>
+</BaseLayout>
