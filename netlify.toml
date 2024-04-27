@@ -1,4 +1,4 @@
-[context.deploy-preview]
+[build]
 base = "/"
 publish = "dist/"
 command = "astro build"
