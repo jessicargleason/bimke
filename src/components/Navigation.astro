@@ -5,10 +5,10 @@ const { page } = Astro.props;
     <nav>
         <h1>Bi+ Pride Milwaukee</h1>
         <ul>
-            <li class={page === "home" && "active"}><a href="/index.html">Home</a></li>
-            <li class={page === "calendar" && "active"}><a href="/calendar.html">Calendar</a></li>
-            <li><a href="/index.html#events">Events</a></li>
-            <li class={page === "bookclub" && "active"}><a href="/bookclub.html">Book Club</a></li>
+            <li class={page === "home" && "active"}><a href="/">Home</a></li>
+            <li class={page === "calendar" && "active"}><a href="/calendar">Calendar</a></li>
+            <li><a href="/#events">Events</a></li>
+            <li class={page === "news" && "active"}><a href="/in-the-news">In the News</a></li>
         </ul>
     </nav>
 </div>

@@ -235,10 +235,15 @@ nav ul li {
 
     .book-container div {
         flex-basis: 40%;
+        flex-shrink: 0;
     }
   
     .book-container div + div {
         flex-basis: 60%;
+    }
+
+    .book-container h2 {
+        margin-top: 0;
     }
 
 }
