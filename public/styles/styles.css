@@ -9,6 +9,7 @@ a {
     color: #D60270;
     text-decoration: none;
     border-bottom: 1px dashed #D60270;
+    background-color: rgba(0,0,0,.3);
 }
 
 a:hover {
@@ -326,8 +327,6 @@ nav ul a:visited {
 	height: 100%;
 }
 
-/* Styles for screens over 580px wide*/
-
 @media (min-width: 768px) {
     .button {
         display: inline-block;
@@ -356,6 +355,10 @@ nav ul a:visited {
         font-size: 1.1em;
     }
 
+    .cover--left p {
+        margin: 10px 0;
+    }
+
     /* At larger sizes, items inside this container automatically size into columns */
 
     .flex {
@@ -373,4 +376,20 @@ nav ul a:visited {
         padding: 25px;
     }
 	
+}
+
+.gallery-image {
+    max-width: 100%;
+    width: 100%;
+}
+
+.gallery {
+    margin: 15px;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        display: flex;
+        grid-gap: 20px;
+    }
 }
