@@ -1,10 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Section from '../components/Section.astro';
+import Gallery from '../components/Gallery.astro';
+import GalleryImage from '../components/GalleryImage.astro';
 ---
 <BaseLayout pageTitle="Bisexualitea" page="bisexualitea" description="Tea party at the Milwaukee LGBT Community Center celebrating bisexual awareness week">
 	<Section backgroundImage="unicorn.jpg">
-		<h1>Bisexuali-tea Party</h1>
-		<p>Join Bi+ Pride Milwaukee in September 2024 for our annual tea party at the Milwaukee LGBT Community Center. More information coming soon.</p>
+		<GalleryImage image="bisexualitea/bisexualitea.jpg" description="Bi+ Pride Milwaukee Presents The Annual Bisexuali-Tea Party" />
+		<h1>Bisexuali-Tea Party 2024</h1>
+		<p>Join Bi+ Pride Milwaukee on <strong>September 21st, 2024 at the <a href="https://www.mkelgbt.org/" target="_blank">Milwaukee LGBT Community Center</a></strong> for our annual tea party.</p>
+		<p>Wear whatever makes you feel comfortable and the most bi+ (bonus points for a fancy hat)! Snacks and tea will be provided.</p>
 	</Section>
+	<Gallery>
+		<GalleryImage image="bisexualitea/tea1.jpg" description="Teacups" />
+		<GalleryImage image="bisexualitea/tea2.jpg" description="A spread of food in front of an inflatable unicorn" />
+		<GalleryImage image="bisexualitea/tea3.jpg" description="The Milwaukee LGBT Community Center decorated with flags" />
+	</Gallery>
 </BaseLayout>
