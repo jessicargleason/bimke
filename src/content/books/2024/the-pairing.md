@@ -7,7 +7,7 @@ archiveLink: https://www.goodreads.com/book/show/199440249-the-pairing
 eventDateHeading: Monday, September 9th, 2024
 monthNumber: 9
 year: 2024
-archived: false
+archived: true
 ---
 
 We have an extra book club! We get to talk about "The Pairing" by Casey McQuiston.
