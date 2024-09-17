@@ -385,11 +385,17 @@ nav ul a:visited {
 
 .gallery {
     margin: 15px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
 }
 
 @media (min-width: 768px) {
     .gallery {
-        display: flex;
-        grid-gap: 20px;
+        flex-direction: row;
+    }
+
+    .gallery div {
+        flex-basis: 100%;
     }
 }
