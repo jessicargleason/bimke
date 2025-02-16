@@ -8,11 +8,16 @@ collections:
     label: "News" # Used in the UI
     folder: "src/content/news" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}/{{slug}}"
+    slug: "{{year}}-{{slug}}"
     fields: # The fields for each document, usually in frontmatter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Link", name: "link", widget: "string" }
-      - { label: "Source Name", name: "sourceName", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY/MM/DD" }
+      - label: "Featured Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - { label: "Image", name: "url", widget: "image"}
+          - { label: "Description", name: "alt", widget: "string", hint: "Briefly describe the image for the benefit of the visually impaired"}
+      - { label: "Link", name: "link", widget: "string", hint: "Full URL for the source of the news" }
+      - { label: "Source Name", name: "sourceName", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown" }
