@@ -1,6 +1,6 @@
 ---
 title: Reclaiming the "B" in LGBTQ
-date: 2022-02-28
+date: "2022-02-28"
 link: https://onmilwaukee.com/articles/bi-plus-pride-milwaukee
 sourceName: OnMilwaukee
 image: {

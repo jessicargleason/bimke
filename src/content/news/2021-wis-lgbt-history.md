@@ -1,6 +1,6 @@
 ---
 title: Bi+ Pride Milwaukee in the Wisconsin LGBTQ History Project Historical Archive
-date: 2021-10-01
+date: "2021-10-01"
 link: https://archive.wislgbthistory.com/organiz/social/bi+pride.htm
 sourceName: WI LGBTQ History Project
 image: {

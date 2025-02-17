@@ -1,6 +1,6 @@
 ---
 title: PrideFest Milwaukee honors our community heroes
-date: 2019-06-04
+date: "2019-06-04"
 link: https://urbanmilwaukee.com/pressrelease/pridefest-milwaukee-honors-our-community-heroes/
 sourceName: Urban Milwaukee
 image: {

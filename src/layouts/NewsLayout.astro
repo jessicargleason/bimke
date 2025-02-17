@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 const news = await getCollection('news');
-news.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+news.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
 ---
 <hr>
 {news.map(async article => 
