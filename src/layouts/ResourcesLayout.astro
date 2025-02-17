@@ -12,7 +12,7 @@ const resources = await getCollection('resources');
         shortDescription,
     } = article.data;
     return (
-        <div class="book-container">
+        <div class="split-container">
             <div>
             {image?.url &&
                 <a href={`/resources/${article.id}`}>

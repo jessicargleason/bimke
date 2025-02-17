@@ -23,7 +23,7 @@ const {
 ---
 <BaseLayout pageTitle={title} page="resources" description={shortDescription}></BaseLayout>
 <Section backgroundImage={headerBackground ? headerBackground : ''}>
-    <div class={image?.url ? 'book-container' : ''}>
+    <div class={image?.url ? 'split-container' : ''}>
         <div>
             {image?.url &&
                 <img src={`/${image.url}`} alt={image?.alt ? image.alt : title} />

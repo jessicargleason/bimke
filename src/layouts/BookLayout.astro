@@ -29,7 +29,7 @@ const archivedBooks = await getCollection('books', ({ data }) => {
     });
     const { Content } = await book.render();
     return (
-        <div class="book-container">
+        <div class="split-container">
             <div>
                 <a href={archiveLink} target="_blank">
                     <img src={`/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />

@@ -21,7 +21,7 @@ news.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
     });
     const { Content } = await article.render();
     return (
-        <div class="book-container">
+        <div class="split-container">
             <div>
             {image?.url &&
                 <a href={link} target="_blank">
