@@ -1,7 +1,7 @@
 ---
 bookTitle: The Queer Principles of Kitt Web by Cat Sebastian
 bookType: Historical Romance
-coverImage: Queer Principles of Kitt Webb.jpg
+coverImage: uploads/Queer Principles of Kitt Webb.jpg
 eventLink: https://fb.me/e/1tG8DaPTT
 archiveLink: https://www.goodreads.com/book/show/55338994-the-queer-principles-of-kit-webb
 eventDateHeading: Monday, August 5th, 2024

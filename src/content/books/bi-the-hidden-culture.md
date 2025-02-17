@@ -1,7 +1,7 @@
 ---
 bookTitle: "Bi: The Hidden Culture, History, and Science of Bisexuality by Julia Shaw"
 bookType: Nonfiction
-coverImage: Bi book cover.jpg
+coverImage: uploads/Bi book cover.jpg
 eventLink: https://fb.me/e/FCIzVa79
 archiveLink: https://www.goodreads.com/book/show/58667392-bi
 eventDateHeading: Monday, June 3rd, 2024

@@ -1,7 +1,7 @@
 ---
 bookTitle: Fathomfolk by Eliza Chan
 bookType: Fantasy
-coverImage: fathomfolk.png
+coverImage: uploads/fathomfolk.png
 eventLink: https://www.facebook.com/events/8081451895277544/
 archiveLink: https://www.goodreads.com/book/show/173404001-fathomfolk
 eventDateHeading: Monday, April 7th, 2025

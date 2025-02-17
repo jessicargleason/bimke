@@ -1,7 +1,7 @@
 ---
 bookTitle: Last Night At The Hollywood Canteen by Sarah James
 bookType: Mystery
-coverImage: last-night-hollywood-canteen.jpg
+coverImage: uploads/last-night-hollywood-canteen.jpg
 eventLink: https://www.facebook.com/events/1190918275524802
 archiveLink: https://www.goodreads.com/book/show/82769755-last-night-at-the-hollywood-canteen
 eventDateHeading: Monday, December 9th, 2024

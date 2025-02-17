@@ -1,7 +1,7 @@
 ---
 bookTitle: "To Shape a Dragon's Breath by Moniquill Blackgoose"
 bookType: YA Fiction
-coverImage: to-shape-a-dragon.jpg
+coverImage: uploads/to-shape-a-dragon.jpg
 eventLink: https://www.facebook.com/events/949545996934958
 archiveLink: https://www.goodreads.com/book/show/61937038-to-shape-a-dragon-s-breath
 eventDateHeading: Monday, October 7th, 2024

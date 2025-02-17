@@ -30,7 +30,7 @@ const archivedBooks = await getCollection('books', ({ data }) => {
         <div class="book-container">
             <div>
                 <a href={archiveLink} target="_blank">
-                    <img src={`/bookclub-assets/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
+                    <img src={`/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
                 </a>
             </div>
             <div>
@@ -60,7 +60,7 @@ const archivedBooks = await getCollection('books', ({ data }) => {
             return (
                 <div>
                     <a href={archiveLink} target="_blank">
-                        <img src={`/bookclub-assets/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
+                        <img src={`/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
                     </a>
                 </div>
             );

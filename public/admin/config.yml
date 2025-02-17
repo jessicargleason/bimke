@@ -1,5 +1,5 @@
 media_folder: "public/uploads" # Location where files will be stored in the repo
-public_folder: "public/uploads" # The src attribute for uploaded media
+public_folder: "uploads" # The src attribute for uploaded media
 backend:
   name: git-gateway
   branch: decap # Branch to update (optional; defaults to master)
@@ -21,3 +21,19 @@ collections:
       - { label: "Link", name: "link", widget: "string", hint: "Full URL for the source of the news" }
       - { label: "Source Name", name: "sourceName", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "books" # Used in routes, e.g., /admin/collections/blog
+    label: "Book Club Books" # Used in the UI
+    folder: "src/content/books" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{slug}}"
+    fields: # The fields for each document, usually in frontmatter
+      - { label: "Book Title and Author", name: "bookTitle", widget: "string", hint: "Book Title by Author Name" }
+      - { label: "Genre", name: "bookType", widget: "string" }
+      - { label: "Cover Image", name: "coverImage", widget: "image"}
+      - { label: "Facebook Event Link", name: "eventLink", widget: "string" }
+      - { label: "Archive Link", name: "archiveLink", widget: "string", hint: "Link with book info for after book club has passed (e.g. on Goodreads)"}
+      - { label: "Event Date", name: "eventDateHeading", widget: "string", hint: "Freeform date as described to visitors (e.g. Monday, June 3rd, 2024)"}
+      - { label: "Year", name: "year", widget: "datetime", format: "YYYY"}
+      - { label: "Month", name: "monthNumber", widget: "datetime", format: "MM"}
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Archived?" name: "archived", widget: "boolean", hint: "Move to previous book club selections"}

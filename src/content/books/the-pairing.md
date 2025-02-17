@@ -1,7 +1,7 @@
 ---
 bookTitle: The Pairing
 bookType: Contemporary Romance
-coverImage: the-pairing.jpg
+coverImage: uploads/the-pairing.jpg
 eventLink: https://www.facebook.com/events/835319442060604
 archiveLink: https://www.goodreads.com/book/show/199440249-the-pairing
 eventDateHeading: Monday, September 9th, 2024

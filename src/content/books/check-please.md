@@ -1,7 +1,7 @@
 ---
 bookTitle: Check, Please! by Ngozi Ukazu
 bookType: Graphic Novel
-coverImage: check-please.png
+coverImage: uploads/check-please.png
 eventLink: https://www.facebook.com/events/868787395356491
 archiveLink: https://www.goodreads.com/book/show/37534577-check-please-book-1
 eventDateHeading: Monday, February 3rd, 2025

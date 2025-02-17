@@ -1,7 +1,7 @@
 ---
 bookTitle: "Baggage: Tales From a Fully Packed Life by Alan Cumming"
 bookType: Memoir
-coverImage: Alan Cumming Baggage.jpg
+coverImage: uploads/Alan Cumming Baggage.jpg
 eventLink: https://fb.me/e/1tG8DaPTT
 archiveLink: https://www.goodreads.com/book/show/57931617-baggage
 eventDateHeading: Monday, April 8th, 2024
