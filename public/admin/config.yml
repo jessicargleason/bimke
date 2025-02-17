@@ -1,5 +1,5 @@
-media_folder: "src/uploads/images" # Location where files will be stored in the repo
-public_folder: "src/uploads/images" # The src attribute for uploaded media
+media_folder: "public/uploads" # Location where files will be stored in the repo
+public_folder: "public/uploads" # The src attribute for uploaded media
 backend:
   name: git-gateway
   branch: decap # Branch to update (optional; defaults to master)

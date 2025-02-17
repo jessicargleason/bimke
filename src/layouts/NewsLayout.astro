@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 const news = await getCollection('news');
-news.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
+news.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 <hr>
 {news.map(async article => 
@@ -19,7 +19,7 @@ news.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
             <div>
             {image?.url &&
                 <a href={link} target="_blank">
-                    <img src={`/uploads/${image.url}`} alt={image?.alt ? image.alt : title} />
+                    <img src={`/${image.url}`} alt={image?.alt ? image.alt : title} />
                 </a>
             }
             </div>

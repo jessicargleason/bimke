@@ -2,9 +2,9 @@
 title: Celebrating Bisexual+ Awareness Month
 sourceName: Shepherd Express
 link: https://shepherdexpress.com/lgbtq/my-lgbtq-pov/celebrating-bisexual-awareness-month/
-date: "2020-09-08"
+date: 2020-09-08
 image: {
-    url: parade2.jpg,
+    url: uploads/parade2.jpg,
     alt: Bi flags being flown during the Milwaukee Pride Parade
 }
 ---

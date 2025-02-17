@@ -20,7 +20,7 @@ const newsCollection = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    date: z.string(),
+    date: z.date(),
     image: z.object({
       url: z.string(),
       alt: z.string(),
