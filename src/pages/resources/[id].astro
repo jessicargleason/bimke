@@ -26,7 +26,7 @@ const {
     <div class={image?.url ? 'split-container' : ''}>
         <div>
             {image?.url &&
-                <img src={`/${image.url}`} alt={image?.alt ? image.alt : title} />
+                <a href={`/${image.url}`} target="_blank"><img src={`/${image.url}`} alt={image?.alt ? image.alt : title} /></a>
             }
         </div>
         <div>
