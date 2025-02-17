@@ -32,8 +32,7 @@ collections:
       - { label: "Cover Image", name: "coverImage", widget: "image"}
       - { label: "Facebook Event Link", name: "eventLink", widget: "string" }
       - { label: "Archive Link", name: "archiveLink", widget: "string", hint: "Link with book info for after book club has passed (e.g. on Goodreads)"}
-      - { label: "Event Date", name: "eventDateHeading", widget: "string", hint: "Freeform date as described to visitors (e.g. Monday, June 3rd, 2024)"}
-      - { label: "Year", name: "year", widget: "datetime", format: "YYYY"}
-      - { label: "Month", name: "monthNumber", widget: "datetime", format: "MM"}
+      - { label: "Event Date", name: "year", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, hint: "Book club event date"}
+      - { label: "Event Date Description", name: "eventDateHeading", widget: "string", hint: "Event date information as shown to visitors (e.g. Monday, June 3rd, 2024)"}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Archived?", name: "archived", widget: "boolean", hint: "Move to previous book club selections"}

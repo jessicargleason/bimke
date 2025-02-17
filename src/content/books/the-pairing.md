@@ -5,9 +5,8 @@ coverImage: uploads/the-pairing.jpg
 eventLink: https://www.facebook.com/events/835319442060604
 archiveLink: https://www.goodreads.com/book/show/199440249-the-pairing
 eventDateHeading: Monday, September 9th, 2024
-monthNumber: 9
-year: 2024
 archived: true
+eventDate: 2024-09-09
 ---
 
 We have an extra book club! We get to talk about "The Pairing" by Casey McQuiston.

@@ -11,8 +11,7 @@ const bookCollection = defineCollection({
       archiveLink: z.string().url(),
       eventDateHeading: z.string().optional(),
       archived: z.boolean(),
-      year: z.number().optional(),
-      monthNumber: z.number().optional(),
+      eventDate: z.date().optional(),
     })
 });
 
