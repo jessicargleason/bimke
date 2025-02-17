@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+const resources = await getCollection('resources');
+---
+<hr>
+{resources.map(async article => 
+    {
+    const {
+        title,
+        image,
+        author,
+        shortDescription,
+    } = article.data;
+    return (
+        <div class="book-container">
+            <div>
+            {image?.url &&
+                <a href={`/resources/${article.id}`}>
+                    <img src={`/${image.url}`} alt={image?.alt ? image.alt : title} />
+                </a>
+            }
+            </div>
+            <div>
+                <h2><a href={`/resources/${article.id}`}>{title}</a></h2>
+                <p>{shortDescription}</p>
+            </div>
+        </div>
+  );
+},
+)}
+</div>

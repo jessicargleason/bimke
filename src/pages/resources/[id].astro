@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Section from '../../components/Section.astro';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('resources');
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+const {
+        title,
+        image,
+        author,
+        shortDescription,
+        headerBackground,
+    } = post.data;
+---
+<BaseLayout pageTitle={title} page="resources" description={shortDescription}></BaseLayout>
+<Section backgroundImage={headerBackground ? headerBackground : ''}>
+    <div class={image?.url ? 'book-container' : ''}>
+        <div>
+            {image?.url &&
+                <img src={`/${image.url}`} alt={image?.alt ? image.alt : title} />
+            }
+        </div>
+        <div>
+            <h1>{title}</h1>
+            <p>by {author}</p>
+            <p>{shortDescription}</p>
+        </div>
+    </div>
+</Section>
+<Section textDirection="left">
+    <Content />
+</Section>
+</BaseLayout>
