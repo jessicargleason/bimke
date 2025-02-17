@@ -36,26 +36,26 @@ collections:
       - { label: "Event Date Description", name: "eventDateHeading", widget: "string", hint: "Event date information as shown to visitors (e.g. Monday, June 3rd, 2024)"}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Archived?", name: "archived", widget: "boolean", hint: "Move to previous book club selections"}
-    - name: "resources"
-      label: "Resource Page"
-      folder: "src/content/resources"
-      create: true
-      slug: "{{slug}}"
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Author", name: "author", widget: "string" }
-        - { label: "Short Description", name: "shortDescription", widget: "string" }
-        - label: "Header Background"
-          name: "headerBackground"
-          widget: "select"
-          options: 
+  - name: "resources"
+    label: "Resource Page"
+    folder: "src/content/resources"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Short Description", name: "shortDescription", widget: "string" }
+      - label: "Header Background"
+        name: "headerBackground"
+        widget: "select"
+        options: 
           - { label: "Book Club", value: "bookclub.png" }
           - { label: "Hands", value: "cover.jpg" }
           - { label: "Map", value: "map.jpg" }
           - { label: "Parade", value: "parade.jpg" }
           - { label: "Pridefest Table", value: "pridefest.jpg" }
           - { label: "Proclamations", value: "proclamations.jpg" }
-          - { label: "Pridefest Grounds", "summerfest.jpg" }
-          - { label: "Tea Party", "tea-party.jpg" }
-          - { label: "Unicorn", "unicorn.jpg" }
-          - { label: "City Hall", "zeidler.jpg" }
+          - { label: "Pridefest Grounds", value: "summerfest.jpg" }
+          - { label: "Tea Party", value: "tea-party.jpg" }
+          - { label: "Unicorn", value: "unicorn.jpg" }
+          - { label: "City Hall", value: "zeidler.jpg" }
