@@ -36,4 +36,4 @@ collections:
       - { label: "Year", name: "year", widget: "datetime", format: "YYYY"}
       - { label: "Month", name: "monthNumber", widget: "datetime", format: "MM"}
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Archived?" name: "archived", widget: "boolean", hint: "Move to previous book club selections"}
+      - { label: "Archived?", name: "archived", widget: "boolean", hint: "Move to previous book club selections"}
