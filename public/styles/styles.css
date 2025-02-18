@@ -261,37 +261,37 @@ nav ul a:visited {
     }
 }
 
-.book-container {
+.split-container {
     padding-left: 15px;
     padding-right: 15px;
     max-width: 800px;
     margin: auto;
 }
 
-.book-container div {
+.split-container div {
     padding: 15px;
 }
 
-.book-container img {
+.split-container img {
     max-width: 100%;
 }
 
 @media (min-width: 768px) {
 
-    .book-container {
+    .split-container {
         display: flex;
     }
 
-    .book-container div {
+    .split-container div {
         flex-basis: 40%;
         flex-shrink: 0;
     }
   
-    .book-container div + div {
+    .split-container div + div {
         flex-basis: 60%;
     }
 
-    .book-container h2 {
+    .split-container h2 {
         margin-top: 0;
     }
 
