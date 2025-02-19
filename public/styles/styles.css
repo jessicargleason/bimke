@@ -254,6 +254,7 @@ nav ul a:visited {
         border-width: 1px;
         border-style: solid;
         font-size: 1.2rem;
+        flex-shrink: 0;
     }
 
     nav ul a {

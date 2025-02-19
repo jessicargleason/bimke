@@ -65,3 +65,4 @@ collections:
           - { label: "Tea Party", value: "tea-party.jpg" }
           - { label: "Unicorn", value: "unicorn.jpg" }
           - { label: "City Hall", value: "zeidler.jpg" }
+      - { label: "Body", name: "body", widget: "markdown" }
