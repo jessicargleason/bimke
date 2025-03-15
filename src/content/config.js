@@ -12,6 +12,7 @@ const bookCollection = defineCollection({
       eventDateHeading: z.string().optional(),
       archived: z.boolean(),
       eventDate: z.date().optional(),
+      published: z.boolean().default(true),
     })
 });
 
@@ -26,6 +27,7 @@ const newsCollection = defineCollection({
     }).optional(),
     link: z.string().url(),
     sourceName: z.string(),
+    published: z.boolean().default(true),
   })
 });
 
@@ -40,6 +42,7 @@ const resourcesCollection = defineCollection({
     author: z.string().optional(),
     shortDescription: z.string(),
     headerBackground: z.string().optional(),
+    published: z.boolean().default(true),
   })
 });
 

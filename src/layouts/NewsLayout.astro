@@ -4,7 +4,7 @@ const news = await getCollection('news');
 news.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 <hr>
-{news.map(async article => 
+{news.filter(article => article.data.published === true).map(async article => 
     {
     const {
         title,

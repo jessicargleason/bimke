@@ -21,6 +21,7 @@ collections:
       - { label: "Link", name: "link", widget: "string", hint: "Full URL for the source of the news" }
       - { label: "Source Name", name: "sourceName", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Published?", name: "published", widget: "boolean", hint: "Turn off to hide from news list page"}
   - name: "books" # Used in routes, e.g., /admin/collections/blog
     label: "Book Club Book" # Used in the UI
     folder: "src/content/books" # The path to the folder where the documents are stored
@@ -36,6 +37,7 @@ collections:
       - { label: "Event Date Description", name: "eventDateHeading", widget: "string", hint: "Event date information as shown to visitors (e.g. Monday, June 3rd, 2024)"}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Archived?", name: "archived", widget: "boolean", hint: "Move to previous book club selections"}
+      - { label: "Published?", name: "published", widget: "boolean", hint: "Turn off to hide from book club page"}
   - name: "resources"
     label: "Resource Page"
     folder: "src/content/resources"
@@ -66,3 +68,4 @@ collections:
           - { label: "Unicorn", value: "unicorn.jpg" }
           - { label: "City Hall", value: "zeidler.jpg" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Published?", name: "published", widget: "boolean", hint: "Turn off to hide from resources list page"}

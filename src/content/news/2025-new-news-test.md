@@ -6,6 +6,7 @@ image:
   alt: Bi heart
 link: https://www.bi.org
 sourceName: Bi.org
+published: false
 ---
 Test news item content here. This is a test news item to see if Decap works correctly.
 

@@ -3,12 +3,11 @@ import { getCollection } from 'astro:content';
 const resources = await getCollection('resources');
 ---
 <hr>
-{resources.map(async article => 
+{resources.filter(article => article.data.published === true).map(async article => 
     {
     const {
         title,
         image,
-        author,
         shortDescription,
     } = article.data;
     return (

@@ -2,11 +2,11 @@
 import Section from '../components/Section.astro';
 import { getCollection } from 'astro:content';
 const currentBooks = await getCollection('books', ({ data }) => {
-  return ((data.archived !== true) && data.eventDate);
+  return ((data.archived !== true) && data.eventDate && data.published === true);
 });
 currentBooks.sort((a, b) => a.data.eventDate.getTime() - b.data.eventDate.getTime());
 const archivedBooks = await getCollection('books', ({ data }) => {
-  return data.archived === true;
+  return data.archived === true && data.published === true;
 });
 ---
 <hr>
