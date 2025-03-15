@@ -2,16 +2,11 @@
 import Section from '../components/Section.astro';
 import { getCollection } from 'astro:content';
 const currentBooks = await getCollection('books', ({ data }) => {
-  return ((data.archived !== true) && data.year && data.monthNumber);
+  return ((data.archived !== true) && data.eventDate && data.published === true);
 });
-currentBooks.sort(
-  (a, b) => {
-    if (a.data.year !== b.data.year) return a.data.year - b.data.year;
-    return a.data.monthNumber - b.data.monthNumber
-  }
-);
+currentBooks.sort((a, b) => a.data.eventDate.getTime() - b.data.eventDate.getTime());
 const archivedBooks = await getCollection('books', ({ data }) => {
-  return data.archived === true;
+  return data.archived === true && data.published === true;
 });
 ---
 <hr>
@@ -24,17 +19,24 @@ const archivedBooks = await getCollection('books', ({ data }) => {
         eventLink,
         archiveLink,
         eventDateHeading,
+        eventDate,
     } = book.data;
+    const formattedDate = eventDate.toLocaleDateString("en-US",
+    {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
     const { Content } = await book.render();
     return (
-        <div class="book-container">
+        <div class="split-container">
             <div>
                 <a href={archiveLink} target="_blank">
-                    <img src={`/bookclub-assets/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
+                    <img src={`/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
                 </a>
             </div>
             <div>
-                <h3>{eventDateHeading} <br>
+                <h3>{formattedDate}<br>
                 {bookTitle}<br>
                 {bookType && `(${bookType})`}</h3>
                 <Content />
@@ -60,7 +62,7 @@ const archivedBooks = await getCollection('books', ({ data }) => {
             return (
                 <div>
                     <a href={archiveLink} target="_blank">
-                        <img src={`/bookclub-assets/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
+                        <img src={`/${coverImage}`} alt={`${bookTitle} ${bookType && `(${bookType})`}`} />
                     </a>
                 </div>
             );
