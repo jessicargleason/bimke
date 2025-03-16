@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Gallery from './Gallery.astro';
+import GalleryImage from './GalleryImage.astro';
+import Section from '../components/Section.astro';
+const news = await getCollection('news');
+---
+<Gallery>
+{news.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).filter(article => article.data.published === true).slice(0,3).map(async article => 
+    {
+        const {
+            title,
+            link,
+            image,
+        } = article.data;
+        return (
+            <figure>
+                <a href={link}><img src=`/${image?.url}` alt={image?.alt} class="gallery-image" /></a>
+                <figcaption>{title}</figcaption>
+            </figure>
+        );
+    },
+)}

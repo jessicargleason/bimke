@@ -24,7 +24,7 @@ const newsCollection = defineCollection({
     image: z.object({
       url: z.string(),
       alt: z.string(),
-    }).optional(),
+    }),
     link: z.string().url(),
     sourceName: z.string(),
     published: z.boolean().default(true),
