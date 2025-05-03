@@ -5,12 +5,9 @@ archiveLink: https://www.goodreads.com/book/show/173404001-fathomfolk
 year: 2025-04-07
 archived: true
 eventDate: 2025-04-07
-<<<<<<< HEAD
-=======
 bookTitle: Fathomfolk by Eliza Chan
 eventLink: https://www.facebook.com/events/8081451895277544/
 eventDateHeading: Monday, April 7th, 2025
->>>>>>> master
 published: true
 ---
 
