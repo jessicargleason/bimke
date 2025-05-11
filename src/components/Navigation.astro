@@ -10,10 +10,10 @@ const { page } = Astro.props;
         </div>
         <ul aria-expanded="true" id="nav">
             <li class={page === "home" && "active"}><a href="/">Home</a></li>
-            <li class={page === "calendar" && "active"}><a href="/calendar">Calendar</a></li>
-            <li><a href="/#events">Events</a></li>
+            <li class={page === "calendar" && "active"}><a href="/calendar">Events</a></li>
             <li class={page === "bookclub" && "active"}><a href="/bookclub">Book Club</a></li>
             <li class={page === "news" && "active"}><a href="/in-the-news">In the News</a></li>
+            <li class=`special ${page === "pride" && "active"}`><a href="/pride">Pride 2025</a></li>
             <!-- <li class={page === "resources" && "active"}><a href="/resources">Resources</a></li>  -->
         </ul>
     </nav>
