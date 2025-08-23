@@ -7,6 +7,7 @@ archiveLink: https://www.goodreads.com/book/show/82769755-last-night-at-the-holl
 eventDateHeading: Monday, December 9th, 2024
 archived: true
 eventDate: 2024-12-09
+published: true
 ---
 
 December's book is a glittering mystery novel set in 1943, the height of Hollywood's Golden Age... in the midst of Word War II, the Studio System, Hayes Code Censorship, and dazzling stardom. We follow bisexual playwright Annie Laurence from New York to Hollywood, where she starts writings scripts for movies... and witnesses a murder at the Hollywood Canteen - a real-life place staffed each night by stars from different studios, where servicemen shipping out could see shows put on by stars like Bette Davis, The Andrews Sisters, Judy Garland, Frank Sinatra, and Louis Armstrong before heading off to war.

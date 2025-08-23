@@ -7,6 +7,7 @@ image: {
     url: uploads/parade2.jpg,
     alt: Bi flags being flown during the Milwaukee Pride Parade
 }
+published: true
 ---
 
 Bi+ Pride Milwaukee is mentioned in this Shepherd Express article about Bisexual+ Awareness Month.
