@@ -5,7 +5,7 @@ coverImage: uploads/road-to-ruin.jpg
 eventLink: https://www.facebook.com/events/1749751388895077/
 archiveLink: https://www.goodreads.com/book/show/199798512-road-to-ruin
 eventDateHeading: Monday, August 4th, 2025
-archived: false
+archived: true
 eventDate: 2025-08-04
 ---
 

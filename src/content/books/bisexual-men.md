@@ -5,7 +5,7 @@ coverImage: uploads/bisexual-men-exist.jpg
 eventLink: https://www.facebook.com/events/1180612559662816/
 archiveLink: https://www.goodreads.com/book/show/64400790-bisexual-men-exist
 eventDateHeading: Monday, June 9th, 2025
-archived: false
+archived: true
 eventDate: 2025-06-09
 ---
 
