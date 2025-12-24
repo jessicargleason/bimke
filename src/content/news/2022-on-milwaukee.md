@@ -7,6 +7,7 @@ image: {
     url: uploads/parade.jpg,
     alt: Bi+ Pride Milwaukee members holding bi, pan, and trans flags
 }
+published: true
 ---
 
 OnMilwaukee.com interviewed Bi+ Pride Milwaukee's Sarah Wallisch and Amy Luettgen

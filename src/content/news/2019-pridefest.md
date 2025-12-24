@@ -7,6 +7,7 @@ image: {
     url: uploads/pridefest.jpg,
     alt: Rise! Pridefest Milwaukee June 6-9 2019
 }
+published: true
 ---
 
 Urban Milwaukee reports on Bi+ Pride Milwaukee receiving a Pride Award at Pridefest 2019.

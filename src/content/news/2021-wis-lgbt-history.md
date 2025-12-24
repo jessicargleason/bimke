@@ -7,6 +7,7 @@ image: {
     url: uploads/JoCastaBiPride.jpg,
     alt: Bi+ Pride Milwaukee members hold a bi pride flag alongside JoCasta Zamarripa
 }
+published: true
 ---
 
 Wisconsin LGBTQ History Project added Bi+ Pride Milwaukee to its archive of social organizations in Milwaukee.
