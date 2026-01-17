@@ -5,7 +5,7 @@ coverImage: uploads/check-please-2.jpg
 archiveLink: https://www.goodreads.com/book/show/41541435-check-please-book-2
 eventDateHeading: Bonus Book Club - Monday, January 5th, 2026
 eventLink: https://www.facebook.com/events/1797401864211661
-archived: false
+archived: true
 eventDate: 2026-01-05
 ---
 
