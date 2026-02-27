@@ -7,6 +7,7 @@ image: {
     url: uploads/parade2.jpg,
     alt: Bi flags being flown during the Milwaukee Pride Parade
 }
+published: true
 ---
 
 Bi+ Pride Milwaukee and our Bisexuali-Tea event are covered in this Shepherd Express article about Bi Visibility Month.
