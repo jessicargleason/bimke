@@ -5,7 +5,7 @@ coverImage: uploads/pucking-around.png
 archiveLink: https://www.goodreads.com/book/show/123194693-pucking-around
 eventDateHeading: Bonus Book Club - Monday, March 9th, 2026
 eventLink: https://www.facebook.com/events/1302780084493348
-archived: false
+archived: true
 eventDate: 2026-03-09
 ---
 
