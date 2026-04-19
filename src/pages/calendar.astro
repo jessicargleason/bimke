@@ -1,16 +1,68 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Section from '../components/Section.astro';
+import Button from '../components/Button.astro';
+import Grid from '../components/Grid.astro';
 ---
 <BaseLayout pageTitle="Upcoming Events Calendar" page="calendar" description="Calendar of upcoming events like book club meetings, craft afternoons, happy hours, and other social outings for Milwaukee bisexuals">
     <Section backgroundImage="summerfest.jpg">
-        <p>Working to build a strong, vibrant Bisexual/Pansexual/No-Label/Fluid/Queer/Non-Monosexual community in Milwaukee and Southeastern Wisconsin.</p>
+         <h1>Events</h1>
+         <p>Bringing our community together around Milwaukee and beyond.</p>
     </Section>
-    <Section>
+    <Section textDirection="left">
+       <p>Connect with members of the community and allies at Bi+ Pride Milwaukee events. Our events are generally organized by a volunteer host and participants are expected to adhere to a <a href="">Code of Conduct</a>.</p>
+       <p>Check the calendar below for the latest on times and locations, but here's some of what Bi+ Pride Milwaukee organizes on a regular basis:</p>
+        <Grid>
+            <div>
+                <h2>Bi Cafe</h2>
+                <p><i>Usually the third Sunday morning of the month at Anondyne Coffee in Walker's Point</i></p>
+                <p>Share a cuppa with Bi+ friends! De-stress! Decompress! Converse in a Bi+ universe! </p>
+            </div>
+            <div>
+                <h2>Discussion Group</h2>
+                <p><i>Usually the third Wednesday evening of the month at the Milwaukee LGBT Community Center</i></p>
+                <p>A discussion group for everyone under the bi+ umbrella centered around a topic chosen by the event host.</p>
+            </div>
+            <div>
+                <h2>Quiet Night</h2>
+                <p><i>Usually the first Tuesday evening of the month at the Milwaukee LGBT Community Center</i></p>
+                <p>Expect soft lighting, calm conversation, and a no-pressure vibe—ideal for introverts, book lovers, and anyone who enjoys a chill evening with like-minded people. Other members of the Queer community are welcome, too!</p>
+            </div>
+            <div>
+            <h2>Book Club</h2>
+            <p><i>Bi-monthly, usually on the first Monday evening of the month at the Milwaukee LGBT Community Center</i></p>
+            <p>Join Bi+ Pride Milwaukee for a book discussion at the LGBT Community Center!</p>
+            <p><Button link="/bookclub" color="bi-blue">Book List</Button></p>
+            </div>
+            <div>
+            <h2>Crafternoon</h2>
+            <p><i>Usually the fourth Saturday afternoon of the month at the Milwaukee LGBT Community Center</i></p>
+            <p>Bring your craft of choice and join Bi+ Pride MKE for some fellowship and fun at the MKE LGBT Community Center!</p>
+            </div>
+            <div>
+                <h2>Bi Hiking</h2>
+                <p><i>Various weekends at locations around southeastern Wisconsin</i></p>
+                <p>Explore the outdoors with bi+ pals!</p>
+            </div>
+            <div>
+                <h2>Movie Night</h2>
+                <p><i>Various evenings at the Milwaukee LGBT Community Center</i></p>
+                <p>Enjoy a movie with us. Snacks and beverages welcome!</p>
+            </div>
+            <div>
+                <h2>Bi+ Happy Hour</h2>
+                <p><i>Various evenings at locations around southeastern Wisconsin</i></p>
+                <p>Join us for Bi Happy Hour, a welcoming and inclusive social event for bisexual+ folks and allies!</p>
+            </div>
+
+       </Grid>
         <h2>Event Calendar</h2>
         <div class="calendar-container">
             <iframe src="https://embed.styledcalendar.com/#dLwM9XnZvoI8an95cZC8" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
             <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
         </div>
+    </Section>
+    <Section backgroundImage="unicorn.jpg">
+        <script async src="https://eocampaign1.com/form/dc0ace52-27b6-11f0-aeb0-3b7aca71985e.js" data-form="dc0ace52-27b6-11f0-aeb0-3b7aca71985e"></script>
     </Section>
 </BaseLayout>
