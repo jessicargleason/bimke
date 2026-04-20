@@ -18,7 +18,7 @@ a:hover {
 
 p {
     /* Keep paragraphs short enough to be readable */
-    max-width: 45em;
+    /* max-width: 45em; */
 }
 
 li {
@@ -88,7 +88,7 @@ h1, h2 {
 .container {
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -150,12 +150,13 @@ h1, h2 {
 .calendar-container {
     position: relative;
     width: 100%;
-    padding-bottom: 75%; /* Set the aspect ratio for the calendar */
+    /* padding-bottom: 75%; */ /* Set the aspect ratio for the calendar */
     overflow: hidden;
 }
 
 .event-mini-calendar {
     flex-basis: 50%;
+    flex-shrink: 0;
 }
 
 .header {
@@ -414,4 +415,11 @@ nav ul a:visited {
     .gallery div {
         flex-basis: 100%;
     }
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: .8em;
+    grid-gap: 20px;
 }

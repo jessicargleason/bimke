@@ -5,7 +5,7 @@ coverImage: uploads/kitra.jpg
 archiveLink: https://www.goodreads.com/book/show/52659940-kitra
 eventDateHeading: Monday, February 9th, 2026
 eventLink: https://www.facebook.com/events/1608359333938153
-archived: false
+archived: true
 eventDate: 2026-02-09
 ---
 
