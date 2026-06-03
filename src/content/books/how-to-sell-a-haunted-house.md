@@ -5,7 +5,7 @@ coverImage: uploads/how-to-sell-a-haunted-house.jpg
 archiveLink: https://www.goodreads.com/book/show/59414094-how-to-sell-a-haunted-house
 eventDateHeading: Monday, October 5th, 2026
 eventLink: 
-archived: true
+archived: false
 eventDate: 2026-10-05
 ---
 
