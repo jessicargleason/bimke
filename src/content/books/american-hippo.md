@@ -1,0 +1,16 @@
+---
+bookTitle: American Hippo by Sarah Gailey
+bookType: Historical Fiction
+coverImage: uploads/american-hippo.jpg
+archiveLink: https://www.goodreads.com/book/show/36152812-american-hippo
+eventDateHeading: Monday, April 5th, 2027
+archived: false
+eventDate: 2027-04-05
+---
+
+
+In 2017 Sarah Gailey made their debut with River of Teeth and Taste of Marrow, two action-packed novellas that introduced readers to an alternate America in which hippos rule the colossal swamp that was once the Mississippi River. Now readers have the chance to own both novellas in American Hippo, a single, beautiful volume.
+
+Years ago, in an America that never was, the United States government introduced herds of hippos to the marshlands of Louisiana to be bred and slaughtered as an alternative meat source. This plan failed to take into account some key facts about hippos: they are savage, they are fast, and their jaws can snap a man in two.
+
+By the 1890s, the vast bayou that was once America's greatest waterway belongs to feral hippos, and Winslow Houndstooth has been contracted to take it back. To do so, he will gather a crew of the damnedest cons, outlaws, and assassins to ever ride a hippo. American Hippo is the story of their fortunes, their failures, and his revenge.
