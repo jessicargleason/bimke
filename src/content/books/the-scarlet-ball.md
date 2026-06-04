@@ -3,9 +3,9 @@ bookTitle: The Scarlet Ball by Nghi Vo
 bookType: Historical Fantasy
 coverImage: uploads/the-scarlet-ball.jpg
 archiveLink: https://www.goodreads.com/book/show/244942084-the-scarlet-ball
-eventDateHeading: Monday, December 7th, 2026
+eventDateHeading: Monday, November 9th, 2026
 archived: false
-eventDate: 2026-12-07
+eventDate: 2026-11-09
 ---
 
 
